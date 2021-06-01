@@ -5,6 +5,7 @@ function Movies() {
   const indMovie = movies.map((movie) => (
     <div key={movie.title}>
       <h2>{movie.title}</h2>
+      <p> Runtime: {movie.time} minutes</p>
     </div>
   ));
   return (
