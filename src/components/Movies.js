@@ -6,6 +6,11 @@ function Movies() {
     <div key={movie.title}>
       <h2>{movie.title}</h2>
       <p> Runtime: {movie.time} minutes</p>
+      <ul>
+        {movie.genres.map((genre) => (
+          <li key={genre}>{genre}</li>
+        ))}
+      </ul>
     </div>
   ));
   return (
